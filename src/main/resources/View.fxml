@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<GridPane id="view" fx:id="view" alignment="CENTER" hgap="5.0" minHeight="269.0" minWidth="330.0" vgap="5.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+<GridPane id="view" fx:id="view" alignment="CENTER" hgap="5.0" minHeight="269.0" minWidth="330.0" prefHeight="274.0" prefWidth="392.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <padding>
       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
    </padding>
@@ -18,8 +17,8 @@
       <RowConstraints vgrow="ALWAYS" />
       <RowConstraints vgrow="ALWAYS" />
       <RowConstraints vgrow="ALWAYS" />
-      <RowConstraints vgrow="ALWAYS" />
-      <RowConstraints vgrow="ALWAYS" />
+      <RowConstraints maxHeight="50.0" minHeight="26.0" prefHeight="50.0" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="0.0" vgrow="ALWAYS" />
    </rowConstraints>
    <columnConstraints>
       <ColumnConstraints hgrow="ALWAYS" />
@@ -38,7 +37,7 @@
       <Button fx:id="bOcho" layoutX="15.0" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onEightButtonAction" text="8" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
       <Button fx:id="bNueve" layoutX="124.0" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onNineButtonAction" text="9" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
       <Button fx:id="borrarTodoB" layoutX="197.0" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onDeleteAllButtonAction" text="CE" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-      <Button fx:id="BorrarB" layoutX="246.0" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onDeleteButtonAction" text="C" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+      <Button fx:id="borrarB" layoutX="246.0" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onDeleteButtonAction" text="C" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
       <Button fx:id="bCuatro" layoutX="15.0" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onFourButtonAction" text="4" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
       <Button fx:id="bCinco" layoutX="275.0" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onFiveButtonAction" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
       <Button fx:id="bSeis" layoutX="210.0" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onSixButtonAction" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
@@ -48,9 +47,9 @@
       <Button fx:id="bUno" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onOneButtonAction" prefWidth="0.0" text="1" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
       <Button fx:id="bDos" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onTwoButtonAction" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
       <Button fx:id="bTres" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onTresButtonAction" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-      <Button fx:id="bUno1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="120.0" mnemonicParsing="false" onAction="#onOneButtonAction" text="0" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-      <Button fx:id="bUno11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onOneButtonAction" text="1" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-      <Button fx:id="bUno12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onOneButtonAction" text="1" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-      <Button fx:id="bUno121" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onOneButtonAction" text="1" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+      <Button fx:id="bCero" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onCeroButtonAction" text="0" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+      <Button fx:id="bSuma" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onSumaButtonAction" text="+" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+      <Button fx:id="bComa" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onComaButtonAction" text="," textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+      <Button fx:id="bIgual" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="60.0" mnemonicParsing="false" onAction="#onIgualButtonAction" style="-fx-background-color: ADD8E6;" text="=" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3" GridPane.rowSpan="2" />
    </children>
 </GridPane>
